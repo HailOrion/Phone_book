@@ -11,12 +11,16 @@ public class Main extends ContactDetails {
         String input;
         String a = "Store contact information";
         String b = "Retrieve contact information";
+        
+        //App opens
+        //Request user input
         System.out.println("Select an Option");
         System.out.println("a " + a);
         System.out.println("b " + b);
         Scanner scanner = new Scanner(System.in);
         input = scanner.nextLine();
 
+        //Store contact
         int i = 0;
         while(i < 1) {
             if (input.contains("a")) {
@@ -38,6 +42,7 @@ public class Main extends ContactDetails {
             i++;
         }
 
+        //Retrieve saved contact
         System.out.println("To view saved contact, please type \"b\"");
         input = scanner.nextLine();
         int j = 0;
